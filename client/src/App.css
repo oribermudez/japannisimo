@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.answer {
+  font-size: 1em;
+  padding: 1.3%;
+  border: 3px solid #ea1559;
+  margin: 2%;
+  box-shadow: 5px 10px 18px #b5b4b4;
+  border-radius: 25px;
+  background-color: #ea1559;
+  color: white;
+}
+
+.answer:hover {
+ cursor: pointer;
+}
+
+h3 {
+  font-size: 2.7em;
+}
+
+.reading {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.hiragana {
+  margin-top: 0;
+  font-size: 3.3em;
+}
+
+.score {
+  width: 50%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 22.5%;
+  align-items: center;
+}
+
+.scoreFont {
+  font-size: 2.5em;
+}
+
+.leyend {
+  color: #ea1559;
+  font-size: 1.8em;
+  margin-bottom: 3%;
+}
+
+.romaji {
+  width: 15%;
+  padding: 1%;
+  border-radius: 25px;
+  border: 2px solid #ea1559;
+  font-size: .9em;
+}
+
+.romaji:hover {
+  cursor: pointer;
+}
+
+.lesson {
+  width: 100%;
+}
+
+.polaroid {
+  width: 15%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 1%;
+}
+
+.polaroid:hover{
+  cursor: pointer;
+}
+
+.container{
+  text-align: center;
+  padding: 5px 10px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 4%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav img{
+  float: right;
+  margin-right: 2%;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #ea1559;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #ea1559;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
