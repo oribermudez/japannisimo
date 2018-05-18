@@ -13,7 +13,7 @@ exports.patchWord = (req,res,next)=>{
 }
 
 exports.getWords = function(req, res, next) {
-    Word.find({ status: { $ne: 'Solved' } })
+    Word.find()
     .then(items=>res.status(200).json(items))
     .catch(e=>res.status(500).send(e));
 }
@@ -28,6 +28,8 @@ exports.postWord = (req, res, next)=>{
       lesson: req.body.lesson, 
     });
     newWord.save()
+    .then(item=>res.status(200).json(item))
+    .catch(e=>res.status(500).send(e));
 }
 
 exports.patchWordPic = (req,res,next)=>{

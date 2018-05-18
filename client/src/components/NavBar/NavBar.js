@@ -14,13 +14,12 @@ class NavBar extends Component {
             <a href="#practice">Practice</a>
             <a href="#kanji">Kanji</a>
             <a href="#contact">Contact Us</a>
-            <img width='180px' src={japannisimo}/>
+            <img width='180px' src={japannisimo} alt="Japannisimo Logo"/>
           </div>
         </nav>
       </div>
-      );
+    );
   }
-
 };
 
 export default NavBar;

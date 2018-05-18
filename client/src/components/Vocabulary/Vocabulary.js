@@ -15,10 +15,10 @@ class Vocabulary extends Component {
     }
 
     setRandoms = () => {
-        this.setState({firstRandom: Math.floor(Math.random() * 35), 
-                       secondRandom: Math.floor(Math.random() * 35), 
-                       thirdRandom:Math.floor(Math.random() * 35), 
-                       index: Math.floor(Math.random() * 35)});
+        this.setState({firstRandom: Math.floor(Math.random() * this.props.dataLength), 
+                       secondRandom: Math.floor(Math.random() * this.props.dataLength), 
+                       thirdRandom:Math.floor(Math.random() * this.props.dataLength), 
+                       index: Math.floor(Math.random() * this.props.dataLength)});
     }
        
     componentWillMount() {
@@ -49,9 +49,9 @@ class Vocabulary extends Component {
               {this.props.words.length > 0 ? 
                 <div>
                     <div className='score'>
-                        <span className='scoreFont'><img src={star} width='50'/>{this.state.points === 0 ? null : this.state.points}</span>
+                        <span className='scoreFont'><img src={star} width='50' alt='Star'/>{this.state.points === 0 ? null : this.state.points}</span>
                         <button className='romaji' onClick={this.romajiSwitch}>{this.state.romaji ? 'Hiragana' : 'Romaji'}</button>
-                        <span className='scoreFont'><img src={tache} width='35'/> {this.state.bad === 0 ? null : this.state.bad}</span>
+                        <span className='scoreFont'><img src={tache} width='35' alt='Tache'/> {this.state.bad === 0 ? null : this.state.bad}</span>
                     </div>
                     <h4 className='center leyend'>What's the meaning of this?: </h4>
                     <p className='center reading'>{this.state.romaji ? this.props.words[this.state.index].romaji : this.props.words[this.state.index].kanji === ''  ? '' : this.props.words[this.state.index].japanese}</p>

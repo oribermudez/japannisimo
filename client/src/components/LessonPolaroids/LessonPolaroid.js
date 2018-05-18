@@ -42,7 +42,7 @@ class LessonPolaroid extends Component {
           {this.state.images.map((img, index) => {
             return (
               <div key={index} onClick={() => {this.props.showHide()}} className="polaroid">
-                <img className="lesson" src={img.url}/>
+                <img className="lesson" src={img.url} alt={img.name}/>
                 <div className="container">
                   <p><b>{img.name}</b></p>
                 </div>

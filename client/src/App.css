@@ -146,6 +146,65 @@ h3 {
   color: white;
 }
 
+.kanji-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  background: #fff;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: auto;
+  margin: 2%;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  /* background-color: #ea1559a9;
+  color: white; */
+}
+
+.kanji {
+  font-size: 4em;
+}
+
+.kanji-meaning {
+  font-size: 1.5em;
+  color: #ea1559;
+  margin: 5%;
+  text-align: center;
+}
+
+.pink {
+  color: #ea1559;
+}
+
+.kanji-readings {
+  text-align: left;
+  margin-left: 3%;
+}
+
+.kunsAndOns {
+  font-size: 0.6em;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
